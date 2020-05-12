@@ -103,4 +103,14 @@ class TicTacToe
     end
   end
 
+  def player
+    while over? == false
+      turn
+    end
+      if won?
+        puts "Congratulatations #{winner}"
+      elsif draw?
+        puts "Cat's Game"
+      end
+    end
 end
